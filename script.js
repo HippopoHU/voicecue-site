@@ -8,7 +8,7 @@ for (const link of document.querySelectorAll('[data-checkout]')) {
   link.dataset.checkoutState = liveCheckout ? 'live' : 'pending';
 
   if (!liveCheckout) {
-    link.textContent = 'Request purchase access — $49';
+    link.textContent = 'Request purchase access — €49';
     link.title = 'Checkout will open after the Lemon Squeezy store is approved. Contact us to be notified.';
     link.setAttribute('aria-label', 'Request VoiceCue checkout by email');
   }
